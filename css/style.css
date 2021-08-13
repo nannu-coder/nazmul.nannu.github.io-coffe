@@ -1,0 +1,296 @@
+/*=====GOOGLE FONTS=====*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800&display=swap');
+
+
+/*=====CUSTOM CSS=====*/
+:root {
+    --primary-font: 'Josefin Sans',
+        sans-serif;
+    --rare-font: 'Cedarville Cursive',
+        cursive;
+    --p-font: 'Alegreya Sans',
+        sans-serif;
+}
+
+/*=====COMMON CSS=====*/
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/*=====header part=====*/
+.nav-logo-text {
+    font-family: var(--rare-font);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 61px;
+    letter-spacing: 0em;
+}
+
+.nav_bar li a {
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-style: normal;
+}
+
+.nav-btn {
+    font-family: var(--primary-font);
+    font-style: 16px;
+    background-color: #2D635E;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
+    padding: 8px 22px;
+    border: 1px solid #2D635E;
+}
+
+/*=====Banner Part=====*/
+.banner_text p {
+    font-family: var(--rare-font);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 53px;
+    letter-spacing: 0em;
+}
+
+.banner_text h2 {
+    font-family: var(--primary-font);
+    font-size: 63px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 63px;
+    letter-spacing: 0em;
+}
+
+.order_btn {
+    padding: 7px 40px;
+    background-color: #2D635E;
+    border-radius: 5px;
+    border: 0;
+    color: #ffffff;
+    font-family: var(--primary-font);
+}
+
+.banner_icon {
+    background-color: #E3EBE7;
+    opacity: 60%;
+    padding: 50px 80px;
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: -174px;
+}
+
+.banner_img {
+    background-color: #E3EBE7;
+    position: relative;
+}
+
+.banner_img img {
+    position: relative;
+    top: 40px;
+}
+
+.banner_link {
+    position: relative;
+    bottom: 0;
+}
+
+.banner_link ul li a {
+    color: #000000bb;
+    font-size: 18px;
+    border: 1px solid #000000bb;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.banner_link p {
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    text-align: right;
+    margin: 0;
+    font-family: var(--primary-font);
+    font-size: 20px;
+}
+
+/*=====COFFE PART=====*/
+.coffe {
+    margin-top: 150px;
+}
+
+.coffe_img {
+    background-color: #FAE9E0;
+    position: relative;
+}
+
+.coffe_img img {
+    position: relative;
+    bottom: -50px;
+    right: -15px;
+}
+
+.cmn_heading {
+    font-family: var(--primary-font);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0em;
+}
+
+.coffe_content {
+    padding-left: 40px;
+}
+
+.common-p {
+    font-family: var(--p-font);
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.001em;
+    text-align: left;
+    color: #444A4A;
+}
+
+.coffe_img .coffe_about {
+    position: absolute;
+    writing-mode: vertical-rl;
+    top: -35px;
+    left: 0;
+    transform: rotate(-180deg);
+    margin: 0;
+    font-family: var(--rare-font);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+}
+
+/*=====promotion part=====*/
+.promotion {
+    margin-top: 120px;
+}
+
+.promotion_content button {
+    background-color: #2D635E;
+    padding: 7px 30px;
+}
+
+.promotion_img {
+    position: relative;
+}
+
+.promotion_img::before {
+    position: absolute;
+    content: '';
+    background-color: #E3EBE7;
+    width: 100%;
+    height: 90%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.promotion_img img {
+    z-index: 3;
+    position: relative;
+    top: -14px;
+}
+
+.promotion_img .promotion_side {
+    z-index: 3;
+    position: absolute;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    font-family: var(--rare-font);
+    right: 0;
+    top: -30px;
+    margin: 0;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 53px;
+    letter-spacing: 0em;
+}
+
+/*=====Card Part=====*/
+.cards {
+    position: relative;
+    padding: 50px 0;
+    margin-top: 100px;
+}
+
+.cards::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #2D635E;
+    opacity: 5%;
+    z-index: -1;
+}
+
+.card_box {
+    background-color: #ffffff;
+    z-index: 1;
+    border-radius: 15px;
+    box-shadow: 0px 23px 34px rgba(35, 57, 55, 0.17);
+}
+
+.card_box p {
+    line-height: 30px;
+    font-family: var(--p-font);
+}
+
+.card_box h3 {
+    font-family: var(--primary-font);
+}
+
+.right {
+    position: absolute;
+    top: 50%;
+    right: 110px;
+    font-size: 28px;
+}
+
+.left {
+    position: absolute;
+    top: 50%;
+    left: 110px;
+    font-size: 28px;
+}
+
+/*=====maps part=====*/
+.map {
+    margin-top: 100px;
+}
+
+.map_content ul li {
+    font-family: var(--p-font);
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.001em;
+    margin-top: 10px;
+}
+
+.map_content h2 {
+    font-family: var(--primary-font);
+}
