@@ -294,3 +294,8 @@ ol {
 .map_content h2 {
     font-family: var(--primary-font);
 }
+
+/*=====touch part=====*/
+.get_bg {
+    background-color: #E3EBE7;
+}
