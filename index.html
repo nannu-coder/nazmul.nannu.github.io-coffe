@@ -58,15 +58,15 @@
                             <div class="banner_text mt-5">
                                 <p>Drink Coffe Enjoy With Samwayle</p>
                                 <h2 class="mb-4 mt-4">Coffe Shop</h2>
-                                <button class="order_btn">Oreder Now</button>
+                                <button onclick="tr()" class="order_btn">Oreder Now</button>
                             </div>
                         </div>
                         <!--=====banner part start=====-->
                         <div class="col-lg-5">
                             <div class="banner_img d-flex justify-content-center">
-                                <img class="img-fluid" src="img/banner_coffe.png" alt="banner_coffe.png">
+                                <img class="img-fluid w-100" src="img/banner_coffe.png" alt="banner_coffe.png">
 
-                                <div class="banner_icon d-flex justify-content-center">
+                                <div class="banner_icon non d-flex justify-content-center">
                                     <i class="fas fa-long-arrow-alt-right"></i>
                                 </div>
                             </div>
@@ -99,7 +99,7 @@
     <div class="coffe">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 d-flex justify-content-center">
                     <div class="coffe_img">
                         <img class="img-fluid" src="img/coffe.png" alt="coffe.png">
                         <p class="coffe_about">About Us</p>
@@ -129,7 +129,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
-                        <div class="promotion_content">
+                        <div id="promotion" class="promotion_content">
                             <h2 class="cmn_heading mb-3">Coffe Of The Day</h2>
                             <p class="common-p mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
                                 odio,
@@ -138,12 +138,13 @@
                                 perferendis magni nihil, aut iusto praesentium atque et. Aut minus deserunt inventore
                                 rem? Sunt eos necessitatibus, maxime enim perferendis qui autem, dolorem aliquid
                                 doloribus laudantium libero quibusdam eum!</p>
-                            <button class="order_btn">Order Now</button>
+                            <button id="order" class="order_btn">Order Now</button>
                         </div>
                     </div>
                     <div class="col-lg-5">
                         <div class="promotion_img d-flex justify-content-center">
-                            <img class="img-fluid" src="img/cup.png" alt="cup.png">
+                            <img onmouseover="changepic()" onmouseout="changepic2()" id="changes" class="img-fluid"
+                                src="img/cup.png" alt="cup.png">
                             <p class="promotion_side">Promotions</p>
                         </div>
                     </div>
@@ -203,7 +204,7 @@
                 <div class="col-lg-8">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14589.159419114278!2d90.38814355!3d23.914788050000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1628891374729!5m2!1sen!2sbd"
-                        width="650" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+                        style="border:0;" allowfullscreen="" loading="lazy">
                         <p>Contacts</p>
                     </iframe>
                 </div>
@@ -226,14 +227,14 @@
     <section>
         <div class="get">
             <div class="container">
-                <div class="get_bg rounded-3 py-5">
+                <div id="get-bg" ondblclick="bg_chnage()" class="get_bg rounded-3 py-5">
                     <div class="row">
                         <div class="col-lg-12 d-flex flex-column align-items-center">
-                            <div class="get_touch">
+                            <div id="bg" class="get_touch">
                                 <h2>LET'S STAY IN TOUCH</h2>
                                 <p>Get updates on sales, specials and more</p>
-                                <input class="form-control w-100" type="email">
-                                <button class="btn order_btn mt-3">Submit</button>
+                                <input id="input_touch" class="form-control w-100" type="email">
+                                <button disabled id="touch_btn" class="btn order_btn mt-3">Submit</button>
                             </div>
                         </div>
                     </div>
@@ -246,6 +247,13 @@
     <footer class="text-center py-4 mt-5">
         <p class="m-0">2020 &copy; - Samwyle bandtitos</p>
     </footer>
+
+    <script>
+        function bg_chnage() {
+            const background = document.getElementById('get-bg');
+            background.style.backgroundColor = 'red';
+        }
+    </script>
 
     <!--=====JQUERY SCRIPT=====-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
